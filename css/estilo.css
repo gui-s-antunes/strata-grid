@@ -4,6 +4,29 @@ body{
     background-color: #f6f6f6;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+}
+
+.botao{
+    
+    padding: .5em;
+    border-radius: 1em;
+
+    text-decoration: none;
+    text-align: center;
+    font-weight: 200;
+
+    color: white;
+    background-color: rgb(57, 187, 144);
+
+    display: block;
+}
+
+.botao:hover{
+    background-color: rgb(74, 214, 167);
+}
+
 #container{
     display: grid;
 
@@ -64,9 +87,23 @@ body{
     font-size: 1.5em;
 }
 
-.section{
-    height: 300vh;
+.main{
+    padding: 1em;
 }
+
+.section{
+    background-color: #e7e2e2;
+    padding: .1em 1em 1em;
+    border-radius: 1em;
+
+    border-bottom: 5px solid #9b9999;;
+}
+
+.section p{
+    line-height: 1.5;
+}
+
+
 
 
 /* 
