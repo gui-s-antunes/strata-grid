@@ -2,6 +2,7 @@ body{
     font-family: 'Oxygen', sans-serif;
     margin: 0;
     background-color: #f6f6f6;
+    font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -72,7 +73,7 @@ h1, h2, h3, h4, h5, h6{
 .menu-fixado{
     position: sticky;
     top: 0;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
     color: black;
     /* background-color: #757070; */
     background-image: linear-gradient(to bottom, grey 1%, #f6f6f6 40%);
@@ -112,15 +113,29 @@ h1, h2, h3, h4, h5, h6{
     grid-row: 2 / 3;
 }
 
+.main div:nth-child(3){
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+}
+
 
 .section{
     background-color: #e7e2e2;
     padding: 1em 1em 1em;
     border-radius: 1em;
 
-    border-bottom: 5px solid #9b9999;;
+    border-bottom: 5px solid #9b9999;
 
     /* overflow: hidden; */
+}
+
+.section-h1{
+    text-align: center;
+    width: 100%;
+    margin-bottom: .5em;
+    border-radius: .7em;
+    border-bottom: 2px solid grey;
+    background-color: #d6d6d6;
 }
 
 .section p{
@@ -161,7 +176,62 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+.form-info{
+    /* border-bottom: 2px solid black; */
+    margin-bottom: 1em;
+}
 
+.form-info label{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-info input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid black;
+    background-color: rgb(204, 194, 194);
+    padding: .5em;
+    font-weight: 700;
+}
+
+.form-info textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid black;
+    min-height: 200px;
+    background-color: rgb(204, 194, 194);
+    padding: .5em;
+    font-weight: 700;
+    resize: vertical;
+}
+
+.submit-botao{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+
+    background-color: rgb(57, 187, 144);
+    color: white;
+    padding: .5em;
+
+    border-radius: .5em;
+
+}
+
+.form-info input:focus, .form-info textarea:focus{
+    background-color: rgb(128, 121, 121);
+    color: white;
+}
+
+.form-info textarea:focus::placeholder{
+    color: white;
+}
 
 
 /* 
